@@ -7,6 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "ReadingViewController.h"
+#import "QuestionViewController.h"
+#import "ThingViewController.h"
+#import "PersonViewController.h"
+#import "DSNavigationBar.h"
+#import "TopWindow.h"
+#import "AppConfigure.h"
 
 @interface AppDelegate ()
 
@@ -19,13 +27,90 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
     
+    UITabBarController *rootTabBarController = [[UITabBarController alloc] init];
+    
+    // 首页
+    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    UINavigationController *homeNavigationController = [self dsNavigationController];
+    [homeNavigationController setViewControllers:@[homeViewController]];
+    // 文章
+    ReadingViewController *readingViewController = [[ReadingViewController alloc] init];
+    UINavigationController *readingNavigationController = [self dsNavigationController];
+    [readingNavigationController setViewControllers:@[readingViewController]];
+    // 问题
+    QuestionViewController *questionViewController = [[QuestionViewController alloc] init];
+    UINavigationController *questionNavigationController = [self dsNavigationController];
+    [questionNavigationController setViewControllers:@[questionViewController]];
+    // 东西
+    ThingViewController *thingViewController = [[ThingViewController alloc] init];
+    UINavigationController *thingNavigationController = [self dsNavigationController];
+    [thingNavigationController setViewControllers:@[thingViewController]];
+    // 个人
+    PersonViewController *personViewController = [[PersonViewController alloc] init];
+    UINavigationController *personNavigationController = [self dsNavigationController];
+    [personNavigationController setViewControllers:@[personViewController]];
+    
+    rootTabBarController.viewControllers = @[homeNavigationController, readingNavigationController, questionNavigationController, thingNavigationController, personNavigationController];
+    rootTabBarController.tabBar.tintColor = [UIColor colorWithRed:55 / 255.0 green:196 / 255.0 blue:242 / 255.0 alpha:1];
+    rootTabBarController.tabBar.barTintColor = [UIColor colorWithRed:239 / 255.0 green:239 / 255.0 blue:239 / 255.0 alpha:1];
+    rootTabBarController.tabBar.backgroundColor = [UIColor clearColor];
+    
+    if ([AppConfigure boolForKey:APP_THEME_NIGHT_MODE]) {
+        [[DSNavigationBar appearance] setNavigationBarWithColor:NightNavigationBarColor];
+        
+        rootTabBarController.tabBar.backgroundImage = [BaseFunction imageWithColor:[UIColor colorWithRed:48 / 255.0 green:48 / 255.0 blue:48 / 255.0 alpha:1]];
+        
+        // 设置状态栏的字体颜色为黑色
+        [application setStatusBarStyle:UIStatusBarStyleDefault];
+        
+        [DKNightVersionManager nightFalling];
+        self.window.backgroundColor = NightBGViewColor;
+    } else {
+        // create a color and set it to the DSNavigationBar appereance
+        [[DSNavigationBar appearance] setNavigationBarWithColor:DawnNavigationBarColor];
+        
+        rootTabBarController.tabBar.backgroundImage = [BaseFunction imageWithColor:[UIColor colorWithRed:241 / 255.0 green:241 / 255.0 blue:241 / 255.0 alpha:1]];
+        
+        // 设置状态栏的字体颜色为黑色
+        [application setStatusBarStyle:UIStatusBarStyleDefault];
+        self.window.backgroundColor = [UIColor whiteColor];
+    }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nightModeSwitch:) name:@"DKNightVersionNightFallingNotification" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nightModeSwitch:) name:@"DKNightVersionDawnComingNotification" object:nil];
+    self.window.rootViewController = rootTabBarController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
+    // 添加一个window, 点击这个window, 可以让屏幕上的scrollView滚到最顶部
+    [TopWindow show];
     return YES;
 }
+
+- (UINavigationController *)dsNavigationController {
+    //自定义NavigationBar
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithNavigationBarClass:[DSNavigationBar class] toolbarClass:nil];
+    //设置是否透明 不透明
+    [navigationController.navigationBar setOpaque:YES];
+    navigationController.navigationBar.tintColor = [UIColor colorWithRed:100 / 255.0 green:100 / 255.0 blue:100 / 255.0 alpha:229 / 255.0];
+    return navigationController;
+}
+
+#pragma mark - NSNotification
+
+- (void)nightModeSwitch:(NSNotification *)notification {
+    if (Is_Night_Mode) {
+        //		NSLog(@"AppDelegate ---- Night Mode");
+        //控件全局样式  appearance
+        [[DSNavigationBar appearance] setNavigationBarWithColor:NightNavigationBarColor];
+        self.window.backgroundColor = NightBGViewColor;
+    } else {
+        //		NSLog(@"AppDelegate ---- Dawn Mode");
+        [[DSNavigationBar appearance] setNavigationBarWithColor:DawnNavigationBarColor];
+        self.window.backgroundColor = [UIColor whiteColor];
+    }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

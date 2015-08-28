@@ -68,4 +68,6 @@
 
 + (NSString *)stringDateFromDate:(NSDate *)date;
 
++ (UIImage *)imageWithColor:(UIColor *)color;
+
 @end

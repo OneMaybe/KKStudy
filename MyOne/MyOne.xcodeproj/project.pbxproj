@@ -18,6 +18,14 @@
 		6B911D071B9055660042AB93 /* HTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D061B9055660042AB93 /* HTTPTool.m */; };
 		6B911D0A1B9056A40042AB93 /* Century Gothic Bold.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6B911D091B9056A40042AB93 /* Century Gothic Bold.TTF */; };
 		6B911D0E1B9056BA0042AB93 /* DSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D0D1B9056BA0042AB93 /* DSNavigationBar.m */; };
+		6B911D121B90578E0042AB93 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D111B90578E0042AB93 /* BaseViewController.m */; };
+		6B911D151B905AA20042AB93 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D141B905AA20042AB93 /* HomeViewController.m */; };
+		6B911D181B905AAA0042AB93 /* ReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D171B905AAA0042AB93 /* ReadingViewController.m */; };
+		6B911D1B1B905AB60042AB93 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D1A1B905AB60042AB93 /* QuestionViewController.m */; };
+		6B911D1E1B905ABD0042AB93 /* ThingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D1D1B905ABD0042AB93 /* ThingViewController.m */; };
+		6B911D211B905AC60042AB93 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D201B905AC60042AB93 /* PersonViewController.m */; };
+		6B911D241B905C810042AB93 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D231B905C810042AB93 /* SettingsViewController.m */; };
+		6B911D271B905C910042AB93 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D261B905C910042AB93 /* AboutViewController.m */; };
 		E7DB0C926CF3C7DAFAA163A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B97264ECF17153E806117BA8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +66,22 @@
 		6B911D091B9056A40042AB93 /* Century Gothic Bold.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Century Gothic Bold.TTF"; sourceTree = "<group>"; };
 		6B911D0C1B9056BA0042AB93 /* DSNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNavigationBar.h; sourceTree = "<group>"; };
 		6B911D0D1B9056BA0042AB93 /* DSNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNavigationBar.m; sourceTree = "<group>"; };
+		6B911D101B90578E0042AB93 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		6B911D111B90578E0042AB93 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		6B911D131B905AA20042AB93 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		6B911D141B905AA20042AB93 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		6B911D161B905AAA0042AB93 /* ReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingViewController.h; sourceTree = "<group>"; };
+		6B911D171B905AAA0042AB93 /* ReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingViewController.m; sourceTree = "<group>"; };
+		6B911D191B905AB60042AB93 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		6B911D1A1B905AB60042AB93 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		6B911D1C1B905ABD0042AB93 /* ThingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThingViewController.h; sourceTree = "<group>"; };
+		6B911D1D1B905ABD0042AB93 /* ThingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThingViewController.m; sourceTree = "<group>"; };
+		6B911D1F1B905AC60042AB93 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		6B911D201B905AC60042AB93 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		6B911D221B905C810042AB93 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		6B911D231B905C810042AB93 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		6B911D251B905C910042AB93 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		6B911D261B905C910042AB93 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		B97264ECF17153E806117BA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -147,6 +171,21 @@
 		6B911CF21B904D890042AB93 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6B911D0F1B9057750042AB93 /* BaseViewController */,
+				6B911D131B905AA20042AB93 /* HomeViewController.h */,
+				6B911D141B905AA20042AB93 /* HomeViewController.m */,
+				6B911D161B905AAA0042AB93 /* ReadingViewController.h */,
+				6B911D171B905AAA0042AB93 /* ReadingViewController.m */,
+				6B911D191B905AB60042AB93 /* QuestionViewController.h */,
+				6B911D1A1B905AB60042AB93 /* QuestionViewController.m */,
+				6B911D1C1B905ABD0042AB93 /* ThingViewController.h */,
+				6B911D1D1B905ABD0042AB93 /* ThingViewController.m */,
+				6B911D1F1B905AC60042AB93 /* PersonViewController.h */,
+				6B911D201B905AC60042AB93 /* PersonViewController.m */,
+				6B911D221B905C810042AB93 /* SettingsViewController.h */,
+				6B911D231B905C810042AB93 /* SettingsViewController.m */,
+				6B911D251B905C910042AB93 /* AboutViewController.h */,
+				6B911D261B905C910042AB93 /* AboutViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -214,6 +253,15 @@
 				6B911D0D1B9056BA0042AB93 /* DSNavigationBar.m */,
 			);
 			path = DSNavigationBar;
+			sourceTree = "<group>";
+		};
+		6B911D0F1B9057750042AB93 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B911D101B90578E0042AB93 /* BaseViewController.h */,
+				6B911D111B90578E0042AB93 /* BaseViewController.m */,
+			);
+			name = BaseViewController;
 			sourceTree = "<group>";
 		};
 		AF8E712E8FD26707A65425E5 /* Pods */ = {
@@ -369,12 +417,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B911CFE1B90532D0042AB93 /* AppConfigure.m in Sources */,
+				6B911D1E1B905ABD0042AB93 /* ThingViewController.m in Sources */,
+				6B911D121B90578E0042AB93 /* BaseViewController.m in Sources */,
 				6B911D0E1B9056BA0042AB93 /* DSNavigationBar.m in Sources */,
+				6B911D211B905AC60042AB93 /* PersonViewController.m in Sources */,
+				6B911D181B905AAA0042AB93 /* ReadingViewController.m in Sources */,
+				6B911D271B905C910042AB93 /* AboutViewController.m in Sources */,
 				6B911CD21B903C220042AB93 /* AppDelegate.m in Sources */,
 				6B911D011B9054230042AB93 /* BaseFunction.m in Sources */,
+				6B911D1B1B905AB60042AB93 /* QuestionViewController.m in Sources */,
+				6B911D151B905AA20042AB93 /* HomeViewController.m in Sources */,
 				6B911D071B9055660042AB93 /* HTTPTool.m in Sources */,
 				6B911D041B9055370042AB93 /* TopWindow.m in Sources */,
 				6B911CCF1B903C220042AB93 /* main.m in Sources */,
+				6B911D241B905C810042AB93 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
