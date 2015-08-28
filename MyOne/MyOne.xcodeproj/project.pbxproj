@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		6B911CCF1B903C220042AB93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911CCE1B903C220042AB93 /* main.m */; };
 		6B911CD21B903C220042AB93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911CD11B903C220042AB93 /* AppDelegate.m */; };
-		6B911CD51B903C220042AB93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911CD41B903C220042AB93 /* ViewController.m */; };
-		6B911CD81B903C220042AB93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B911CD61B903C220042AB93 /* Main.storyboard */; };
 		6B911CDA1B903C220042AB93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B911CD91B903C220042AB93 /* Images.xcassets */; };
 		6B911CDD1B903C220042AB93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B911CDB1B903C220042AB93 /* LaunchScreen.xib */; };
 		6B911CE91B903C230042AB93 /* MyOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911CE81B903C230042AB93 /* MyOneTests.m */; };
+		6B911CFE1B90532D0042AB93 /* AppConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911CFD1B90532D0042AB93 /* AppConfigure.m */; };
+		6B911D011B9054230042AB93 /* BaseFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D001B9054230042AB93 /* BaseFunction.m */; };
+		6B911D041B9055370042AB93 /* TopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D031B9055370042AB93 /* TopWindow.m */; };
+		6B911D071B9055660042AB93 /* HTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D061B9055660042AB93 /* HTTPTool.m */; };
+		6B911D0A1B9056A40042AB93 /* Century Gothic Bold.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6B911D091B9056A40042AB93 /* Century Gothic Bold.TTF */; };
+		6B911D0E1B9056BA0042AB93 /* DSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B911D0D1B9056BA0042AB93 /* DSNavigationBar.m */; };
+		E7DB0C926CF3C7DAFAA163A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B97264ECF17153E806117BA8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +32,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50205D7FB2A49B196BE51BD1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		56C9986FFEF9E8D14A65C60C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6B911CC91B903C220042AB93 /* MyOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B911CCD1B903C220042AB93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B911CCE1B903C220042AB93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B911CD01B903C220042AB93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B911CD11B903C220042AB93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6B911CD31B903C220042AB93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6B911CD41B903C220042AB93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6B911CD71B903C220042AB93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B911CD91B903C220042AB93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6B911CDC1B903C220042AB93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6B911CE21B903C220042AB93 /* MyOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B911CE71B903C230042AB93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B911CE81B903C230042AB93 /* MyOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOneTests.m; sourceTree = "<group>"; };
+		6B911CF81B904E450042AB93 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		6B911CFA1B904E9B0042AB93 /* MyOne-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyOne-PrefixHeader.pch"; sourceTree = "<group>"; };
+		6B911CFB1B904F210042AB93 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		6B911CFC1B90532D0042AB93 /* AppConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfigure.h; sourceTree = "<group>"; };
+		6B911CFD1B90532D0042AB93 /* AppConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfigure.m; sourceTree = "<group>"; };
+		6B911CFF1B9054230042AB93 /* BaseFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFunction.h; sourceTree = "<group>"; };
+		6B911D001B9054230042AB93 /* BaseFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFunction.m; sourceTree = "<group>"; };
+		6B911D021B9055370042AB93 /* TopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopWindow.h; sourceTree = "<group>"; };
+		6B911D031B9055370042AB93 /* TopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopWindow.m; sourceTree = "<group>"; };
+		6B911D051B9055660042AB93 /* HTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPTool.h; sourceTree = "<group>"; };
+		6B911D061B9055660042AB93 /* HTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPTool.m; sourceTree = "<group>"; };
+		6B911D091B9056A40042AB93 /* Century Gothic Bold.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Century Gothic Bold.TTF"; sourceTree = "<group>"; };
+		6B911D0C1B9056BA0042AB93 /* DSNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNavigationBar.h; sourceTree = "<group>"; };
+		6B911D0D1B9056BA0042AB93 /* DSNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNavigationBar.m; sourceTree = "<group>"; };
+		B97264ECF17153E806117BA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7DB0C926CF3C7DAFAA163A5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +86,8 @@
 				6B911CCB1B903C220042AB93 /* MyOne */,
 				6B911CE51B903C220042AB93 /* MyOneTests */,
 				6B911CCA1B903C220042AB93 /* Products */,
+				AF8E712E8FD26707A65425E5 /* Pods */,
+				B508B2F9FA7540A36ACC0809 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +103,13 @@
 		6B911CCB1B903C220042AB93 /* MyOne */ = {
 			isa = PBXGroup;
 			children = (
-				6B911CD01B903C220042AB93 /* AppDelegate.h */,
-				6B911CD11B903C220042AB93 /* AppDelegate.m */,
-				6B911CD31B903C220042AB93 /* ViewController.h */,
-				6B911CD41B903C220042AB93 /* ViewController.m */,
-				6B911CD61B903C220042AB93 /* Main.storyboard */,
+				6B911CF41B904DA50042AB93 /* Models */,
+				6B911CF31B904D9F0042AB93 /* Views */,
+				6B911CF21B904D890042AB93 /* Controllers */,
+				6B911CF71B904DEA0042AB93 /* Custom */,
+				6B911CF61B904DD20042AB93 /* Others */,
+				6B911CF51B904DCA0042AB93 /* Utils */,
+				6B911D081B9056900042AB93 /* Response */,
 				6B911CD91B903C220042AB93 /* Images.xcassets */,
 				6B911CDB1B903C220042AB93 /* LaunchScreen.xib */,
 				6B911CCC1B903C220042AB93 /* Supporting Files */,
@@ -98,6 +122,7 @@
 			children = (
 				6B911CCD1B903C220042AB93 /* Info.plist */,
 				6B911CCE1B903C220042AB93 /* main.m */,
+				6B911CFA1B904E9B0042AB93 /* MyOne-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +144,95 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6B911CF21B904D890042AB93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6B911CF31B904D9F0042AB93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6B911CF41B904DA50042AB93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6B911CF51B904DCA0042AB93 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6B911CF81B904E450042AB93 /* Constants.h */,
+				6B911CFB1B904F210042AB93 /* Config.h */,
+				6B911CFC1B90532D0042AB93 /* AppConfigure.h */,
+				6B911CFD1B90532D0042AB93 /* AppConfigure.m */,
+				6B911CFF1B9054230042AB93 /* BaseFunction.h */,
+				6B911D001B9054230042AB93 /* BaseFunction.m */,
+				6B911D051B9055660042AB93 /* HTTPTool.h */,
+				6B911D061B9055660042AB93 /* HTTPTool.m */,
+				6B911D021B9055370042AB93 /* TopWindow.h */,
+				6B911D031B9055370042AB93 /* TopWindow.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		6B911CF61B904DD20042AB93 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6B911CD01B903C220042AB93 /* AppDelegate.h */,
+				6B911CD11B903C220042AB93 /* AppDelegate.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		6B911CF71B904DEA0042AB93 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				6B911D0B1B9056BA0042AB93 /* DSNavigationBar */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		6B911D081B9056900042AB93 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				6B911D091B9056A40042AB93 /* Century Gothic Bold.TTF */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		6B911D0B1B9056BA0042AB93 /* DSNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				6B911D0C1B9056BA0042AB93 /* DSNavigationBar.h */,
+				6B911D0D1B9056BA0042AB93 /* DSNavigationBar.m */,
+			);
+			path = DSNavigationBar;
+			sourceTree = "<group>";
+		};
+		AF8E712E8FD26707A65425E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50205D7FB2A49B196BE51BD1 /* Pods.debug.xcconfig */,
+				56C9986FFEF9E8D14A65C60C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B508B2F9FA7540A36ACC0809 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B97264ECF17153E806117BA8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B911CEC1B903C230042AB93 /* Build configuration list for PBXNativeTarget "MyOne" */;
 			buildPhases = (
+				3ED2EA1EE98C53B3DCA6BA0C /* Check Pods Manifest.lock */,
 				6B911CC51B903C220042AB93 /* Sources */,
 				6B911CC61B903C220042AB93 /* Frameworks */,
 				6B911CC71B903C220042AB93 /* Resources */,
+				79AF0C60ADA393FE5835B475 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,8 +315,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B911CD81B903C220042AB93 /* Main.storyboard in Resources */,
 				6B911CDD1B903C220042AB93 /* LaunchScreen.xib in Resources */,
+				6B911D0A1B9056A40042AB93 /* Century Gothic Bold.TTF in Resources */,
 				6B911CDA1B903C220042AB93 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,13 +330,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3ED2EA1EE98C53B3DCA6BA0C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		79AF0C60ADA393FE5835B475 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B911CC51B903C220042AB93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B911CD51B903C220042AB93 /* ViewController.m in Sources */,
+				6B911CFE1B90532D0042AB93 /* AppConfigure.m in Sources */,
+				6B911D0E1B9056BA0042AB93 /* DSNavigationBar.m in Sources */,
 				6B911CD21B903C220042AB93 /* AppDelegate.m in Sources */,
+				6B911D011B9054230042AB93 /* BaseFunction.m in Sources */,
+				6B911D071B9055660042AB93 /* HTTPTool.m in Sources */,
+				6B911D041B9055370042AB93 /* TopWindow.m in Sources */,
 				6B911CCF1B903C220042AB93 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +397,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6B911CD61B903C220042AB93 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6B911CD71B903C220042AB93 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6B911CDB1B903C220042AB93 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,8 +492,10 @@
 		};
 		6B911CED1B903C230042AB93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50205D7FB2A49B196BE51BD1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyOne/MyOne-PrefixHeader.pch";
 				INFOPLIST_FILE = MyOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,8 +504,10 @@
 		};
 		6B911CEE1B903C230042AB93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C9986FFEF9E8D14A65C60C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyOne/MyOne-PrefixHeader.pch";
 				INFOPLIST_FILE = MyOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +567,7 @@
 				6B911CEE1B903C230042AB93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B911CEF1B903C230042AB93 /* Build configuration list for PBXNativeTarget "MyOneTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +576,7 @@
 				6B911CF11B903C230042AB93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

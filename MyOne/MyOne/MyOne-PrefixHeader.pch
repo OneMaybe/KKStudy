@@ -1,0 +1,15 @@
+//
+//  MyOne-PrefixHeader.pch
+//  MyOne
+//
+//  Created by bcmac3 on 15/8/28.
+//  Copyright (c) 2015年 KellenYang. All rights reserved.
+//
+
+#ifndef MyOne_MyOne_PrefixHeader_pch
+#define MyOne_MyOne_PrefixHeader_pch
+
+#import "Constants.h"
+#import "Config.h"
+
+#endif
