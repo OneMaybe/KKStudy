@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.h
+//  PraiseView.h
 //  MyOne
 //
 //  Created by HelloWorld on 8/2/15.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewController : UIViewController
+@interface PraiseView : UIView
+
+- (void)configureViewWithPraiseNumber:(NSString *)praiseNumber;
 
 @end

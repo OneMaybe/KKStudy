@@ -2,8 +2,8 @@
 //  QuestionViewController.h
 //  MyOne
 //
-//  Created by bcmac3 on 15/8/28.
-//  Copyright (c) 2015年 KellenYang. All rights reserved.
+//  Created by HelloWorld on 7/27/15.
+//  Copyright (c) 2015 melody. All rights reserved.
 //
 
 #import "BaseViewController.h"

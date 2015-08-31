@@ -15,6 +15,8 @@
 #import "DSNavigationBar.h"
 #import "TopWindow.h"
 #import "AppConfigure.h"
+#import "UIImageView+WebCache.h"
+#import "KKImageView.h"
 
 @interface AppDelegate ()
 
@@ -80,6 +82,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nightModeSwitch:) name:@"DKNightVersionNightFallingNotification" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nightModeSwitch:) name:@"DKNightVersionDawnComingNotification" object:nil];
     self.window.rootViewController = rootTabBarController;
+    
+//    KKImageView *imgv = [[KKImageView alloc]initWithFrame:CGRectMake(10, 80, 350, 200)];
+//    imgv.backgroundColor = [UIColor orangeColor];
+//    [imgv configImageViewWithUrl:[NSURL URLWithString:@"http://pic.nipic.com/2008-05-07/20085722191339_2.jpg"] animated:YES];
+//    [self.window addSubview:imgv];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     // 添加一个window, 点击这个window, 可以让屏幕上的scrollView滚到最顶部
